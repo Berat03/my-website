@@ -1,0 +1,25 @@
+.box {
+  background-color: #d1d1d1; 
+  font-size: 1rem; 
+  border-radius: 1rem; 
+  border: 2px solid transparent;
+  width: 18vw;
+  height: 18vh;
+  overflow: hidden;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.box:hover {
+  border-color: rgba(0, 191, 255, 0.8); /* Glowing light blue border */
+  transform: scale(1.05); /* Slightly enlarge the box on hover */
+}
+
+.empty-box {
+  background-color: #c9cacb; /* Override background color */
+}
+
+.empty-box:hover {
+  transform: none; 
+  border-color:#c9cacb
+
+}

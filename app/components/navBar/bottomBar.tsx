@@ -1,6 +1,6 @@
 export default function BottomBar() {
     return (
-      <div className="relative w-full h-60">
+      <div className="relative w-full h-40">
         <svg
           className="absolute inset-0"
           width="100%"
@@ -20,7 +20,7 @@ export default function BottomBar() {
               L 0,100 
               Z
             "
-            fill="#6B7280" /* temp colour */
+            fill="#6B7280"
           />
         </svg>
       </div>

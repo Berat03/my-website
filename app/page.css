@@ -1,0 +1,12 @@
+.wii-menu-background {
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(
+      0deg,               /* Horizontal stripes */
+      #ffffff,            /* White line */
+      #ffffff 1px,        /* White line height */
+      #e0e0e0 4px,        /* Grey line starts */
+      #e0e0e0 8px        /* Grey line height */
+    );
+  }
+  
