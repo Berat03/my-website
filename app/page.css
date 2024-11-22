@@ -1,12 +1,29 @@
 .wii-menu-background {
-    width: 100vw;
-    height: 100vh;
-    background: repeating-linear-gradient(
-      0deg,               /* Horizontal stripes */
-      #ffffff,            /* White line */
-      #ffffff 1px,        /* White line height */
-      #e0e0e0 4px,        /* Grey line starts */
-      #e0e0e0 8px        /* Grey line height */
-    );
-  }
-  
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(
+    0deg,
+     #ffffff,
+     #ffffff 1px,
+     #e0e0e0 4px,
+     #e0e0e0 8px
+  );
+}
+
+/* Outer container creates the white bars */
+.outer-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Content is centered with a cropped width */
+.content-container {
+  background-color: white;
+  width: 85%; 
+  min-height: 100%;
+}

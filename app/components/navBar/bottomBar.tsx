@@ -1,8 +1,11 @@
+import AudioPlayer from "../audioPlayer/audioPlayer";
+
 export default function BottomBar() {
     return (
-      <div className="relative w-full h-40">
+      <div className="h-60 absolute bottom-0 w-full">
+        <AudioPlayer src="/audio/menuMusic.mp3" autoPlay={true} loop={true} />
         <svg
-          className="absolute inset-0"
+          className="z-0"
           width="100%"
           height="100%"
           viewBox="0 0 100 100"

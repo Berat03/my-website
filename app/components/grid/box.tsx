@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import "./box.css"; // Import the CSS file
 
-interface SingleBoxProps {
+interface BoxProps {
   id: string; // Renamed from `key` to `id`
   gifUrl: string;
   link: string; // Link to the route or external site
 }
 
-export default function SingleBox({ id, gifUrl, link }: SingleBoxProps) {
+export default function Box({ id, gifUrl, link }: BoxProps) {
   const isExternal = link.startsWith("http://") || link.startsWith("https://");
 
   if (isExternal) {

@@ -1,46 +1,56 @@
-import SingleBox from "./singleBox";
+import React, { useRef } from 'react';
+import Box from './box';
+import items from "../data/items";
+import "./grid.css";
 import "./box.css";
 
 export default function GridLayout() {
-  const items = [
-    {
-      id: "1", 
-      gifUrl: "/gifs/chess.gif",
-      link: "/applications", 
-    },
-    {
-      id: "2", 
-      gifUrl: "/gifs/linkedin.gif",
-      link: "https://www.linkedin.com/in/beratbulbul/", 
-    },
-    {
-      id: "3",
-      gifUrl: "/gifs/github.png",
-      link: "https://github.com/Berat03",
-    },
-  ];
+  const gridSize = 12;
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: -window.innerWidth,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: window.innerWidth,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  const numGrids = Math.ceil(items.length / gridSize);
 
   return (
-    <div className="min-h-screen pl-10 pr-10 pt-14">
-      <div className="grid grid-cols-4 grid-rows-3 gap-10">
-        {/* Render SingleBox components */}
-        {items.map((item) => (
-          <SingleBox
-            key={item.id} // React's internal key for list rendering
-            id={item.id} // Pass ID as a prop to SingleBox
-            gifUrl={item.gifUrl}
-            link={item.link}
-          />
-        ))}
-
-        {/* Render empty boxes to fill grid */}
-        {Array.from({ length: 12 - items.length }).map((_, index) => (
-          <div
-            key={`empty-${index}`} 
-            className="box empty-box" 
-          ></div>
+    <div className=''>
+      <div className="mt-20 scroll-container" ref={scrollContainerRef}>
+        {Array.from({ length: numGrids }).map((_, gridIndex) => (
+          <div className="grid-box" key={`grid-${gridIndex}`}>
+            {items.slice(gridIndex * gridSize, (gridIndex + 1) * gridSize).map((item) => (
+              <Box
+                key={item.id}
+                id={item.id}
+                gifUrl={item.gifUrl}
+                link={item.link}
+              />
+            ))}
+            {Array.from({
+              length: Math.max(0, gridSize - items.slice(gridIndex * gridSize, (gridIndex + 1) * gridSize).length),
+            }).map((_, index) => (
+              <div key={`empty-${gridIndex}-${index}`} className="box empty-box"></div>
+            ))}
+          </div>
         ))}
       </div>
+      <button onClick={scrollLeft} className="scroll-button">Left</button>
+      <button onClick={scrollRight} className="scroll-button">Right</button>
     </div>
   );
 }
