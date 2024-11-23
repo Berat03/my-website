@@ -1,43 +1,43 @@
 .box {
-  background-color: #d1d1d1;
-  border-radius: 1rem;
-  border: 2px solid transparent;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transition:
-    border-color 0.3s ease,
-    transform 0.3s ease;
+    background-color: #d1d1d1;
+    border-radius: 1rem;
+    border: 2px solid transparent;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition:
+        border-color 0.3s ease,
+        transform 0.3s ease;
 }
 
 .box:hover {
-  border-color: rgba(0, 191, 255, 0.8);
-  transform: scale(1.05);
+    border-color: rgba(0, 191, 255, 0.8);
+    transform: scale(1.05);
 }
 
 .empty-box {
-  background-color: #c9cacb;
-  border-radius: 1rem;
-  border: 2px solid transparent;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transition: border-color 0.3s ease;
+    background-color: #c9cacb;
+    border-radius: 1rem;
+    border: 2px solid transparent;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
 }
 
 .empty-box:hover {
-  transform: none;
-  border-color: #c9cacb;
+    transform: none;
+    border-color: #c9cacb;
 }
 
 .grid-box {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-  flex: 0 0 auto;
-  width: 75vw;
-  height: 60vh;
-  padding: 10px;
-  background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    flex: 0 0 auto;
+    width: 75vw;
+    height: 60vh;
+    padding: 10px;
+    background-color: transparent;
 }

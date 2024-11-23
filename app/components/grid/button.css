@@ -7,23 +7,22 @@
     width: 50px; /* Adjust to fit your PNG size */
     height: 50px; /* Adjust to fit your PNG size */
     cursor: pointer; /* Make it look like a button */
-  }
-  
-  .scroll-button.left {
+}
+
+.scroll-button.left {
     background-image: url('../../../public/pointers/leftArrow.png');
     transform: scale(2.5);
+}
 
-  }
-  
-  .scroll-button.right {
+.scroll-button.right {
     background-image: url('../../../public/pointers/rightArrow.png');
     transform: scale(2.5);
-  }
-  
-  .scroll-button.left:hover {
+}
+
+.scroll-button.left:hover {
     transform: scale(3);
-  }
-  
-  .scroll-button.right:hover {
+}
+
+.scroll-button.right:hover {
     transform: scale(3);
-  }
+}
