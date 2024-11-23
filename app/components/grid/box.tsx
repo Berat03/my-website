@@ -24,8 +24,8 @@ export default function Box({ id, gifUrl, link }: BoxProps) {
           <Image
             src={gifUrl}
             alt=""
-            layout="fill"
-            objectFit="cover"
+            fill = {true}
+            style={{ objectFit: "fill" }}
             priority={true}
           />
         </div>
@@ -39,8 +39,8 @@ export default function Box({ id, gifUrl, link }: BoxProps) {
         <Image
           src={gifUrl}
           alt=""
-          layout="fill"
-          objectFit="cover"
+          fill={true}
+          style={{ objectFit: "fill" }}
           priority={true}
         />
       </div>

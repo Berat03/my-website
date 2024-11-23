@@ -26,7 +26,7 @@ const items = [
     },
     {
       id: '6',
-      gifUrl: '/icons/news.webp',
+      gifUrl: '/icons/photoChannel.png',
       link: 'https://github.com/Berat03'
     },
     {

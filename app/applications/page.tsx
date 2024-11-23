@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      <h1>HEYYY</h1>
+      <h1>mockApp</h1>
     </div>
   );
 }
