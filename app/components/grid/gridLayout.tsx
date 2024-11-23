@@ -30,7 +30,7 @@ export default function GridLayout() {
 
   return (
     <div className=''>
-      <div className="mt-20 scroll-container" ref={scrollContainerRef}>
+      <div className="mt-16 scroll-container" ref={scrollContainerRef}>
         {Array.from({ length: numGrids }).map((_, gridIndex) => (
           <div className="grid-box" key={`grid-${gridIndex}`}>
             {items.slice(gridIndex * gridSize, (gridIndex + 1) * gridSize).map((item) => (
