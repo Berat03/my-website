@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-    title: 'Mii Website',
+    title: 'Berat\'s Website',
     description: 'Inspired by the Wii menu layout',
 };
 
