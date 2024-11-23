@@ -1,0 +1,29 @@
+.scroll-button {
+    background-color: transparent; /* Ensure transparency */
+    background-size: contain; /* Fit the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the image */
+    border: none; /* Remove default button borders */
+    width: 50px; /* Adjust to fit your PNG size */
+    height: 50px; /* Adjust to fit your PNG size */
+    cursor: pointer; /* Make it look like a button */
+  }
+  
+  .scroll-button.left {
+    background-image: url('../../../public/pointers/leftArrow.png');
+    transform: scale(2.5);
+
+  }
+  
+  .scroll-button.right {
+    background-image: url('../../../public/pointers/rightArrow.png');
+    transform: scale(2.5);
+  }
+  
+  .scroll-button.left:hover {
+    transform: scale(3);
+  }
+  
+  .scroll-button.right:hover {
+    transform: scale(3);
+  }

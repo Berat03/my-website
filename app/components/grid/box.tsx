@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import "./box.css"; // Import the CSS file
+import Image from 'next/image';
+import Link from 'next/link';
+import './box.css'; // Import the CSS file
 
 interface BoxProps {
   id: string; // Renamed from `key` to `id`
@@ -9,23 +9,23 @@ interface BoxProps {
 }
 
 export default function Box({ id, gifUrl, link }: BoxProps) {
-  const isExternal = link.startsWith("http://") || link.startsWith("https://");
+  const isExternal = link.startsWith('http://') || link.startsWith('https://');
 
   if (isExternal) {
     return (
       <a
         id={id} // Use `id` here
         href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="box"
+        target='_blank'
+        rel='noopener noreferrer'
+        className='box'
       >
-        <div className="relative w-full h-full">
+        <div className='relative w-full h-full'>
           <Image
             src={gifUrl}
-            alt=""
-            fill = {true}
-            style={{ objectFit: "fill" }}
+            alt=''
+            fill={true}
+            style={{ objectFit: 'fill' }}
             priority={true}
           />
         </div>
@@ -34,13 +34,17 @@ export default function Box({ id, gifUrl, link }: BoxProps) {
   }
 
   return (
-    <Link href={link} id={id} className="box">
-      <div className="relative w-full h-full">
+    <Link
+      href={link}
+      id={id}
+      className='box'
+    >
+      <div className='relative w-full h-full'>
         <Image
           src={gifUrl}
-          alt=""
+          alt=''
           fill={true}
-          style={{ objectFit: "fill" }}
+          style={{ objectFit: 'fill' }}
           priority={true}
         />
       </div>
