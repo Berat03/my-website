@@ -1,6 +1,4 @@
 .wii-menu-background {
-    width: 100vw;
-    height: 100vh;
     background: repeating-linear-gradient(
         0deg,
         #ffffff,
@@ -10,20 +8,15 @@
     );
 }
 
-/* Outer container creates the white bars */
+/* Outer container creates side bars */
 .outer-container {
     background-color: black;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
     overflow: hidden;
 }
 
-/* Content is centered with a cropped width */
+/* Content centered with cropped width */
 .content-container {
-    background-color: white;
     width: 85%;
-    min-height: 100%;
 }

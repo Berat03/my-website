@@ -1,12 +1,7 @@
 .scroll-button {
-    background-color: transparent; /* Ensure transparency */
-    background-size: contain; /* Fit the image */
-    background-repeat: no-repeat; /* Prevent tiling */
-    background-position: center; /* Center the image */
-    border: none; /* Remove default button borders */
-    width: 50px; /* Adjust to fit your PNG size */
-    height: 50px; /* Adjust to fit your PNG size */
-    cursor: pointer; /* Make it look like a button */
+    background-size: contain; 
+    width: 50px; /* Better to choose this correctly that rely on transform atttribute */
+    height: 50px; 
 }
 
 .scroll-button.left {

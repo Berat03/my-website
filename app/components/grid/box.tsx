@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import './box.css'; // Import the CSS file
+import './box.css';
 
 interface BoxProps {
-    id: string; // Renamed from `key` to `id`
+    id: string; 
     gifUrl: string;
     link: string; // Link to the route or external site
 }
@@ -15,7 +15,7 @@ export default function Box({ id, gifUrl, link }: BoxProps) {
     if (isExternal) {
         return (
             <a
-                id={id} // Use `id` here
+                id={id}
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"

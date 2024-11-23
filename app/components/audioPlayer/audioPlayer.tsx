@@ -1,12 +1,12 @@
-'use client'; // Mark as a client component
+'use client';
 
 import { useEffect, useRef, useState } from 'react';
 import './audioPlayer.css';
 
 interface AudioPlayerProps {
-    src: string; // Path to the audio file
-    autoPlay?: boolean; // Whether the audio should play automatically
-    loop?: boolean; // Whether the audio should loop
+    src: string; 
+    autoPlay?: boolean;
+    loop?: boolean;
 }
 
 export default function AudioPlayer({
@@ -15,7 +15,7 @@ export default function AudioPlayer({
     loop = false,
 }: AudioPlayerProps) {
     const audioRef = useRef<HTMLAudioElement | null>(null);
-    const [isPlaying, setIsPlaying] = useState(autoPlay); // Start based on autoPlay
+    const [isPlaying, setIsPlaying] = useState(autoPlay);
 
     useEffect(() => {
         const audio = audioRef.current;
@@ -23,7 +23,7 @@ export default function AudioPlayer({
         if (autoPlay && audio) {
             audio.play().catch((error) => {
                 console.log('Autoplay blocked:', error);
-                setIsPlaying(false); // If autoplay is blocked, update state
+                setIsPlaying(false);
             });
         }
     }, [autoPlay]);

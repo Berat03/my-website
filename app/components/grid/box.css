@@ -1,9 +1,6 @@
 .box {
-    background-color: #d1d1d1;
     border-radius: 1rem;
-    border: 2px solid transparent;
-    width: 100%;
-    height: 100%;
+    border: 4px solid transparent;
     overflow: hidden;
     transition:
         border-color 0.3s ease,
@@ -18,26 +15,16 @@
 .empty-box {
     background-color: #c9cacb;
     border-radius: 1rem;
-    border: 2px solid transparent;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
-    transition: border-color 0.3s ease;
 }
-
-.empty-box:hover {
-    transform: none;
-    border-color: #c9cacb;
-}
-
 .grid-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
+    gap: 8px;
     flex: 0 0 auto;
     width: 75vw;
     height: 60vh;
-    padding: 10px;
-    background-color: transparent;
+    padding: 15px;
+    background-color: transparent; /* Change for debugging */
 }

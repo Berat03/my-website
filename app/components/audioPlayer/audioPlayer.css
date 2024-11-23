@@ -4,12 +4,7 @@
     border-radius: 50%; /* Make it a circle */
     background-color: #007bff; /* Button background color */
     color: white; /* Text color */
-    border: none; /* Remove border */
-    cursor: pointer; /* Pointer cursor on hover */
     font-size: 12px; /* Adjust font size */
-    display: flex; /* Center the text */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
 }
 
 .audio-toggle-button:hover {
