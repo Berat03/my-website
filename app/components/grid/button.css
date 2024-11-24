@@ -1,23 +1,23 @@
 .scroll-button {
-    background-size: contain; 
+    background-size: contain;
     width: 50px; /* Better to choose this correctly that rely on transform atttribute */
-    height: 50px; 
+    height: 50px;
 }
 
 .scroll-button.left {
     background-image: url('../../../public/pointers/leftArrow.png');
-    transform: scale(2.5);
+    transform: scale(2.25);
 }
 
 .scroll-button.right {
     background-image: url('../../../public/pointers/rightArrow.png');
-    transform: scale(2.5);
+    transform: scale(2.25);
 }
 
 .scroll-button.left:hover {
-    transform: scale(3);
+    transform: scale(2.75);
 }
 
 .scroll-button.right:hover {
-    transform: scale(3);
+    transform: scale(2.75);
 }

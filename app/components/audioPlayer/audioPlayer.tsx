@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import './audioPlayer.css';
 
 interface AudioPlayerProps {
-    src: string; 
+    src: string;
     autoPlay?: boolean;
     loop?: boolean;
 }

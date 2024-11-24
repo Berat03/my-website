@@ -3,7 +3,7 @@ import Link from 'next/link';
 import './box.css';
 
 interface BoxProps {
-    id: string; 
+    id: string;
     gifUrl: string;
     link: string; // Link to the route or external site
 }

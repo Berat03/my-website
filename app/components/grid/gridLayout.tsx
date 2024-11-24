@@ -66,7 +66,7 @@ export default function GridLayout() {
 
                 <button
                     onClick={scrollLeft}
-                    className="scroll-button left absolute left-2 top-1/3 transform -translate-y-1/2"></button>
+                    className="scroll-button left absolute left-2 top-1/3 transform -translate-y-1/2 "></button>
                 <button
                     onClick={scrollRight}
                     className="scroll-button right absolute right-2 top-1/3 transform -translate-y-1/2"></button>

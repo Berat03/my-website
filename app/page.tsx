@@ -6,8 +6,8 @@ import './page.css';
 
 export default function Home() {
     return (
-        <div className="outer-container">
-            <div className="content-container wii-menu-background relative">
+        <div className="outer-container mouse-cursor">
+            <div className="content-container wii-menu-background relative ">
                 <GridLayout />
                 <BottomBar />
             </div>

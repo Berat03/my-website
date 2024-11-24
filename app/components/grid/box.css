@@ -5,11 +5,13 @@
     transition:
         border-color 0.3s ease,
         transform 0.3s ease;
+    cursor: url('../../../public/mouse/smallPointer.png'), auto;
 }
 
 .box:hover {
     border-color: rgba(0, 191, 255, 0.8);
     transform: scale(1.05);
+    cursor: url('../../../public/mouse/smallPointer.png'), auto;
 }
 
 .empty-box {
