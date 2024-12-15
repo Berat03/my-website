@@ -6,18 +6,18 @@
 
 .scroll-button.left {
     background-image: url('../../../public/pointers/leftArrow.png');
-    transform: scale(2.25);
+    transform: scale(3);
 }
 
 .scroll-button.right {
     background-image: url('../../../public/pointers/rightArrow.png');
-    transform: scale(2.25);
+    transform: scale(3);
 }
 
 .scroll-button.left:hover {
-    transform: scale(2.75);
+    transform: scale(3.75);
 }
 
 .scroll-button.right:hover {
-    transform: scale(2.75);
+    transform: scale(3.75);
 }

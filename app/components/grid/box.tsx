@@ -5,7 +5,7 @@ import './box.css';
 interface BoxProps {
     id: string;
     gifUrl: string;
-    link: string; // Link to the route or external site
+    link: string;
 }
 
 export default function Box({ id, gifUrl, link }: BoxProps) {

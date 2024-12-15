@@ -1,22 +1,3 @@
-.wii-menu-background {
-    background: repeating-linear-gradient(
-        0deg,
-        #ffffff,
-        #ffffff 1px,
-        #e0e0e0 4px,
-        #e0e0e0 8px
-    );
-}
-
-/* Outer container creates side bars */
-.outer-container {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-/* Content centered with cropped width */
-.content-container {
-    width: 85%;
+.mainMenuBackground {
+    background-color: rgb(242, 242, 242);
 }

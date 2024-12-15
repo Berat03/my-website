@@ -5,13 +5,12 @@
     transition:
         border-color 0.3s ease,
         transform 0.3s ease;
-    cursor: url('../../../public/mouse/smallPointer.png'), auto;
+    cursor: url('../../../public/mouse/miniWiiCursor.png'), auto;
 }
 
 .box:hover {
     border-color: rgba(0, 191, 255, 0.8);
-    transform: scale(1.05);
-    cursor: url('../../../public/mouse/smallPointer.png'), auto;
+    cursor: url('../../../public/mouse/miniWiiCursor.png'), auto;
 }
 
 .empty-box {
@@ -25,8 +24,7 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 8px;
     flex: 0 0 auto;
-    width: 75vw;
+    width: 80vw;
     height: 60vh;
-    padding: 15px;
     background-color: transparent; /* Change for debugging */
 }

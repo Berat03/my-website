@@ -41,7 +41,7 @@ export default function AudioPlayer({
     };
 
     return (
-        <div>
+        <div className='z-40'>
             <audio ref={audioRef} src={src} loop={loop} />
             <button
                 className="audio-toggle-button absolute"

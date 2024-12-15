@@ -1,16 +1,12 @@
 'use client';
-
-import GridLayout from './components/grid/gridLayout';
-import BottomBar from './components/navBar/bottomBar';
-import './page.css';
+import Grid from './components/grid/grid';
+import NavBar from './components/navBar/navBar';
 
 export default function Home() {
     return (
-        <div className="outer-container mouse-cursor">
-            <div className="content-container wii-menu-background relative ">
-                <GridLayout />
-                <BottomBar />
-            </div>
+        <div className="mouse-cursor h-full mainMenuBackground">
+            <Grid />|
+            <NavBar />
         </div>
     );
 }
